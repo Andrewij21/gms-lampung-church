@@ -12,12 +12,12 @@ import { useState } from "react";
 import Image from "next/image";
 
 export const _navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#services", label: "Services" },
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#experiences", label: "Experiences" },
-  { href: "#work", label: "Work" },
+  { href: "#", label: "Home" },
+  { href: "#", label: "Services" },
+  { href: "#", label: "About" },
+  { href: "#", label: "Skills" },
+  { href: "#", label: "Experiences" },
+  { href: "#", label: "Work" },
 ];
 
 export default function Nav() {
@@ -65,7 +65,7 @@ function NavLinks({ togglePopOver }: { togglePopOver: (p: boolean) => void }) {
             duration: 0.5,
             delay: index * 0.1,
           }}
-          key={link.href}
+          key={index}
           onClick={() => {
             togglePopOver(false);
           }}
