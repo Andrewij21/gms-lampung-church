@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import * as motion from "framer-motion/client";
-import Link from "next/link";
+// import Link from "next/link";
 import {
   GitHubLogoIcon,
   InstagramLogoIcon,
@@ -9,15 +9,15 @@ import {
 } from "@radix-ui/react-icons";
 export const _social = [
   {
-    href: "https://www.instagram.com/andrewijaya_21/",
+    href: "#",
     icon: InstagramLogoIcon,
   },
   {
-    href: "https://www.linkedin.com/in/andre-wijaya-366911256/",
+    href: "#",
     icon: LinkedInLogoIcon,
   },
   {
-    href: "https://github.com/Andrewij21",
+    href: "#",
     icon: GitHubLogoIcon,
   },
 ];
@@ -25,7 +25,7 @@ export default function GembalaInfo() {
   return (
     <div
       id="home"
-      className="flex items-center max-w-screen-xl rounded-xl p-4 bg-accent"
+      className="grid grid-cols-6 place-items-center gap-x-12 max-w-screen-xl rounded-xl p-4 pb-8 bg-accent"
     >
       <HeroDescriptions />
       <HeroImage />
@@ -65,38 +65,35 @@ function HeroDescriptions() {
       animate={{
         opacity: 1,
       }}
-      className="w-1/2 gap-y-8 flex flex-col items-center md:items-start md:text-left text-center"
+      className="col-span-4 gap-y-8 flex flex-col items-center md:items-start md:text-left text-center"
     >
-      <SocialsLinks />
       <div>
-        <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold mb-4 text-nowrap">
-          Hello, im
-          <motion.span
-            animate={{
-              scale: 1, // Zoom sedikit saat hover
-              boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Bayangan 3D
-            }}
-            className="perspective transform-style-preserve-3d  inline-block text-secondary bg-primary p-2 rounded-lg ml-1"
-          >
-            Andre Wijaya
-          </motion.span>
+        <p>GEMBALA SIDANG</p>
+        <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold mb-4 capitalize">
+          Pd. eddy yanto tan
         </h1>
-        <p className="">
-          im a fullstack web developer with long time experience in this field,
-          my journey in tech has been driven by a love for problem-solving.
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, modi
+          saepe? Nulla rerum nisi ipsum vero voluptas totam accusantium cumque
+          cupiditate incidunt cum, excepturi ut. Explicabo deleniti hic deserunt
+          autem, laboriosam consequatur vitae odio dignissimos. Repudiandae
+          ipsam quisquam rem vero harum! Dignissimos sed asperiores similique,
+          harum odit ea! Molestias, nam. Et dolore ipsa, nesciunt fuga, id quod,
+          dolorem placeat numquam aperiam rem delectus architecto provident
+          exercitationem ducimus maiores tenetur! Odio soluta accusamus impedit
+          quos ad! Eligendi minima error eaque pariatur.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis earum
+          ipsum, ad, quibusdam at cum hic inventore tenetur nulla molestiae
+          commodi mollitia harum neque ullam libero pariatur exercitationem
+          dolorem, ab fugit! Commodi voluptatum dolor quas nisi. Aperiam
+          laboriosam, assumenda quisquam accusantium autem doloremque esse
+          laborum porro? Minima dignissimos explicabo necessitatibus.
         </p>
       </div>
-
-      <div className="flex gap-x-4">
-        <Button asChild>
-          <Link href={"#about"}>About Me</Link>
-        </Button>
-        <Button variant={"link"}>
-          <a href={"/hero/profile.pdf"} download>
-            CV
-          </a>
-        </Button>
-      </div>
+      <SocialsLinks />
     </motion.div>
   );
 }
@@ -114,13 +111,13 @@ function HeroImage() {
       transition={{
         ease: "easeIn",
       }}
-      className="w-1/2 flex justify-center md:justify-end mt-8 md:mt-0 max-h-screen overflow-clip"
+      className="col-span-2 mt-8 md:mt-0 max-h-screen overflow-clip"
     >
       <Image
         src={"/persons/pdmeddyyantotan-png.png"}
         alt="Andre Wijaya"
         loading="lazy"
-        width={500}
+        width={1000}
         height={0}
         className="object-cover"
         style={{
