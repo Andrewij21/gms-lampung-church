@@ -90,7 +90,7 @@ const tabs = [
             Waras, Kota Bandar Lampung."
         times={["09:00", "11:00", "17:00"]}
         video="praise.mp4"
-        speaker={{ name: "pd.eddy yanto tan", img: "pdmeddyyantotan.JPG" }}
+        speaker={{ name: "pd.eddy yanto tan", img: "pdmeddyyantotan.jpg" }}
       />
     ),
   },
