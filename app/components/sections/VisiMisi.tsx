@@ -33,7 +33,7 @@ export default function VisiMisi() {
                   THE YEAR OF
                 </span>
                 <br />
-                <span className="text-4xl lg:text-[6rem] font-bold mt-1 leading-none drop-shadow-lg bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+                <span className="text-4xl sm:text-[4rem] md:text-[5rem] lg:text-[6rem] font-bold mt-1 leading-none drop-shadow-lg bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
                   GREAT SHIFTS & MIRACLES 2024
                 </span>
               </h1>
