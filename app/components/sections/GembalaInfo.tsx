@@ -68,9 +68,9 @@ function HeroDescriptions() {
       className="gap-y-8 flex flex-col items-center md:items-start md:text-left text-center"
     >
       <div>
-        <p>GEMBALA SIDANG</p>
+        <p>GEMBALA LOKAL</p>
         <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold mb-4 capitalize">
-          Pd. eddy yanto tan
+          Ps. eddy yanto
         </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, modi
