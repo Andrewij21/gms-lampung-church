@@ -43,7 +43,7 @@ export default function Nav() {
             <PopoverTrigger asChild className="cursor-pointer">
               <Menu className="text-primary-foreground" />
             </PopoverTrigger>
-            <PopoverContent>
+            <PopoverContent className="bg-primary/50 m-4">
               <NavLinks togglePopOver={setOpen} />
             </PopoverContent>
           </Popover>
@@ -75,7 +75,9 @@ function NavLinks({ togglePopOver }: { togglePopOver: (p: boolean) => void }) {
             className="relative text-primary-foreground hover:text-primary group px-2 py-1 block"
           >
             <span className="block rounded absolute inset-0 group-hover:bg-primary-foreground scale-0 group-hover:scale-100 duration-300 ease-out origin-center"></span>
-            <p className="relative z-10 inline-block">{link.label}</p>
+            <p className="relative z-10 inline-block sm:text-sm md:text-base">
+              {link.label}
+            </p>
           </Link>
         </motion.div>
       ))}
