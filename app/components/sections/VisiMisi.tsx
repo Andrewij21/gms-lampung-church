@@ -9,7 +9,7 @@ export default function VisiMisi() {
           <h2 className="text-6xl font-light mb-4 uppercase tracking-wider">
             Visi
           </h2>
-          <Highlight className="text-6xl leading-normal">
+          <Highlight className="text-3xl lg:text-6xl leading-normal">
             Gereja Sel yang Apostolik dan Profetik
           </Highlight>
         </div>
@@ -18,7 +18,7 @@ export default function VisiMisi() {
           <h2 className="text-6xl font-light mb-4 uppercase tracking-wider">
             Misi
           </h2>
-          <Highlight className="text-6xl leading-normal">
+          <Highlight className="text-3xl lg:text-6xl leading-normal">
             1.000 Gereja Lokal yang Kuat & 1.000.000 Murid
           </Highlight>
         </div>
@@ -33,7 +33,7 @@ export default function VisiMisi() {
                   THE YEAR OF
                 </span>
                 <br />
-                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none drop-shadow-lg bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+                <span className="text-4xl lg:text-[6rem] font-bold mt-1 leading-none drop-shadow-lg bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
                   GREAT SHIFTS & MIRACLES 2024
                 </span>
               </h1>
