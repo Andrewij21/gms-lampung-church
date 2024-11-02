@@ -12,12 +12,18 @@ export default function ConnectGroup() {
   return (
     <section className="relative p-4 h-screen space-y-6">
       <div className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 uppercase">
           <TypewriterEffectSmooth
             cursorClassName="bg-transparent"
             words={[
-              { text: "Connect", className: "text-8xl font-semibold" },
-              { text: "Group", className: "text-8xl font-semibold" },
+              {
+                text: "Connect",
+                className: "text-6xl md:text-7xl lg:text-8xl font-semibold",
+              },
+              {
+                text: "Group",
+                className: "text-6xl md:text-7xl lg:text-8xl font-semibold",
+              },
             ]}
           />
         </div>
