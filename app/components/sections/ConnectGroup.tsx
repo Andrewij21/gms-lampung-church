@@ -10,7 +10,7 @@ import { CardContent, Card } from "@/components/ui/card";
 
 export default function ConnectGroup() {
   return (
-    <section className="relative p-4 min-h-screen space-y-6">
+    <section className="relative p-4 md:min-h-screen space-y-6">
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 uppercase">
           <TypewriterEffectSmooth
