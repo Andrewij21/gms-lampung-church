@@ -8,6 +8,15 @@ import Autoplay from "embla-carousel-autoplay";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { CardContent, Card } from "@/components/ui/card";
 
+const images = [
+  "/cg/1.JPG",
+  "/cg/2.JPG",
+  "/cg/3.JPG",
+  "/cg/4.JPG",
+  "/cg/5.JPG",
+  "/cg/6.JPG",
+];
+
 export default function ConnectGroup() {
   return (
     <section className="relative p-4 md:min-h-screen space-y-6">
@@ -58,14 +67,14 @@ export default function ConnectGroup() {
         }}
       >
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
+          {images.map((img, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
               <div className="p-1">
                 <Card>
                   <CardContent
                     className="flex aspect-square items-center justify-center p-6 bg-cover bg-center rounded-xl cursor-grab"
                     style={{
-                      backgroundImage: `url(/hangout.jpg)`,
+                      backgroundImage: `url(${img})`,
                       aspectRatio: "16/9",
                       height: "auto",
                     }}
