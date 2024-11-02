@@ -6,7 +6,7 @@ export default function About() {
     <section
       className="flex flex-col items-center gap-2 px-4 bg-cover bg-center py-20 relative"
       style={{
-        backgroundImage: "url(/logo/praise.jpg)",
+        backgroundImage: "url(/about/about.jpg)",
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
       }}
