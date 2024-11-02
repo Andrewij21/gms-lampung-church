@@ -32,12 +32,10 @@ const ServiceCard = ({
       )}
     >
       {/* Text Content on the Left */}
-      <div className="flex flex-col justify-center p-6 w-1/2 bg-white text-primary relative z-10">
-        <h1 className="font-bold text-xl md:text-6xl uppercase tracking-wider">
-          {title}
-        </h1>
+      <div className="absolute h-full text-primary-foreground md:text-primary md:relative md:flex flex-col justify-center p-6 md:w-1/2 bg-black/70 md:bg-white z-10 overflow-y-auto">
+        <h1 className="font-bold text-6xl uppercase tracking-wider">{title}</h1>
         {descriptions.map((desc, i) => (
-          <p className="font-normal text-base my-4" key={i}>
+          <p className="font-normal md:text-sm lg:text-base my-4" key={i}>
             {desc}
           </p>
         ))}
@@ -52,19 +50,24 @@ const ServiceCard = ({
             ))}
           </div>
         </div>
+        <p className="block md:hidden mt-12 capitalize text-lg bg-primary-foreground text-primary py-2 px-4 w-fit items-center rounded-xl font-semibold">
+          {speaker.name}
+        </p>
       </div>
 
       {/* Image and Video Overlay on the Right */}
-      <div
-        className={cn("w-1/2 bg-cover relative overflow-hidden group")}
-        style={{ backgroundImage: `url(/persons/${speaker.img})` }}
-      >
-        {/* Video Overlay */}
-        <p className="capitalize text-lg bg-primary/50 text-primary-foreground p-4 w-fit items-center rounded-r-xl  font-semibold ">
-          {speaker.name}
-        </p>
+      <div className="w-full md:w-1/2 relative group">
+        <div
+          className={cn("hidden md:block bg-cover h-full overflow-hidden")}
+          style={{ backgroundImage: `url(/persons/${speaker.img})` }}
+        >
+          {/* Video Overlay */}
+          <p className="capitalize text-lg bg-primary/50 text-primary-foreground p-4 w-fit items-center rounded-r-xl  font-semibold ">
+            {speaker.name}
+          </p>
+        </div>
         <video
-          className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          className="absolute inset-0 w-full h-full object-cover opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           src={`/videos/${video}`} // Path ke video di folder public
           autoPlay
           loop
