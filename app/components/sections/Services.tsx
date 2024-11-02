@@ -126,7 +126,7 @@ const tabs = [
         ]}
         location="Gedung Golden Bistro, Jl. Yos Sudarso No.272, Sukaraja, Kec. Bumi
               Waras, Kota Bandar Lampung."
-        times={["17:00"]}
+        times={["09:00", "11:00", "17:00"]}
         video="praise.mp4"
         speaker={{ name: "Mrs.Nessya", img: "mrsnessya.png" }}
       />
