@@ -25,7 +25,7 @@ export default function GembalaInfo() {
   return (
     <div
       id="home"
-      className="grid grid-cols-6 place-items-center gap-x-12 max-w-screen-xl rounded-xl p-4 pb-8 bg-accent"
+      className="grid grid-cols-1 md:grid-cols-2 place-items-start gap-x-12 max-w-screen-xl rounded-xl p-4 pb-8 bg-accent"
     >
       <HeroDescriptions />
       <HeroImage />
@@ -65,7 +65,7 @@ function HeroDescriptions() {
       animate={{
         opacity: 1,
       }}
-      className="col-span-4 gap-y-8 flex flex-col items-center md:items-start md:text-left text-center"
+      className="gap-y-8 flex flex-col items-center md:items-start md:text-left text-center"
     >
       <div>
         <p>GEMBALA SIDANG</p>
@@ -111,11 +111,11 @@ function HeroImage() {
       transition={{
         ease: "easeIn",
       }}
-      className="col-span-2 mt-8 md:mt-0 max-h-screen overflow-clip"
+      className="mt-8 md:mt-0 max-h-screen overflow-clip"
     >
       <Image
         src={"/persons/pdmeddyyantotan-png.png"}
-        alt="Andre Wijaya"
+        alt="pastor"
         loading="lazy"
         width={1000}
         height={0}
